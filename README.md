@@ -8,3 +8,8 @@ apt-get update
 apt install python3-pip
 pip3 install ultralytics
 
+python3 config_train.py 
+cat ./content/data.yaml
+
+yolo detect train data=./content/data.yaml model=yolo11s.pt epochs=60 imgsz=320
+sudo yolo detect train data=./data.yaml model=yolo11s.pt epochs=60 imgsz=320
