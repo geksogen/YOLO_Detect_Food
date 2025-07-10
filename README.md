@@ -8,6 +8,8 @@ apt-get update
 apt install python3-pip
 pip3 install ultralytics
 
+python train_val_split.py --datapath="/content/custom_data" --train_pct=0.9
+
 python3 config_train.py 
 cat ./content/data.yaml
 
